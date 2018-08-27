@@ -15,7 +15,7 @@ JNICALL Java_skia_skia_com_skiacmake_MainActivity_stringFromJNI(
         JNIEnv *env,
         jobject /* this */) {
     std::string hello = "Hello from C++";
-    jint r = SkClampMax(1,5);
+    //jint r = SkClampMax(1,5);
     return env->NewStringUTF(hello.c_str());
 }
 extern "C"
