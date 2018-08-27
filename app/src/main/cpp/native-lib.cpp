@@ -73,11 +73,14 @@ JNIEXPORT void JNICALL Java_skia_skia_com_skiacmake_MainActivity_drawIntoBitmap(
 
     SkPaint paintR;
     paint.setColor(0xFFFF0000);
-    canvas.drawLine(0,0,1000,1000,paint);
+    canvas.drawLine(0,0,500,500,paint);
+    paint.setColor(0xFF00FF00);
+
+    canvas.drawLine(500,500,1000,1000,paint);
 
 
 //    canvas.drawPoint()
-    SkRect rect;
+    //SkRect rect;
     //rect.
     // Unlock the dst's pixels
     AndroidBitmap_unlockPixels(env, dstBitmap);
