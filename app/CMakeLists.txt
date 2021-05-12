@@ -34,19 +34,19 @@ ${CMAKE_SOURCE_DIR}/src/main/cpp/include/views
 
 add_library(lib_arcore SHARED IMPORTED)
 set_target_properties(lib_arcore PROPERTIES IMPORTED_LOCATION
-    ${SKIA_DIR}/${ANDROID_ABI}/libarcore.so)
+    ${SKIA_DIR}/../cmakeLibs/${ANDROID_ABI}/libarcore.so)
 
 add_library(lib_skottie_android SHARED IMPORTED)
 set_target_properties(lib_skottie_android PROPERTIES IMPORTED_LOCATION
-    ${SKIA_DIR}/${ANDROID_ABI}/libskottie_android.so)
+    ${SKIA_DIR}/../cmakeLibs/${ANDROID_ABI}/libskottie_android.so)
 
 add_library(lib_skqp_app SHARED IMPORTED)
 set_target_properties(lib_skqp_app PROPERTIES IMPORTED_LOCATION
-    ${SKIA_DIR}/${ANDROID_ABI}/libskqp_app.so)
+    ${SKIA_DIR}/../cmakeLibs/${ANDROID_ABI}/libskqp_app.so)
 
 add_library(lib_viewer SHARED IMPORTED)
 set_target_properties(lib_viewer PROPERTIES IMPORTED_LOCATION
-    ${SKIA_DIR}/${ANDROID_ABI}/libviewer.so)
+    ${SKIA_DIR}/../cmakeLibs/${ANDROID_ABI}/libviewer.so)
 
 
 add_library( # Sets the name of the library.
